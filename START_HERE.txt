@@ -1,0 +1,74 @@
+REFLECT PROVIDER DASHBOARD V20
+==============================
+
+V20 is a dashboard-only package designed for the V18.2 Billing Master dataset.
+
+RECOMMENDED DATA PLACEMENT
+--------------------------
+Copy the CONTENTS of your completed data_v18_full folder into:
+
+    ReflectXR_ProviderDashboard_V20\data_v18_2\
+
+The result should be:
+
+    data_v18_2\
+      core\
+        reflect_core_v13.db
+      months\
+        reflect_month_2025-11.db
+        ...
+        reflect_month_2026-10.db
+      billing_master_v18_2\
+        reflect_billing_core_v18_2.db
+        V18_2_MANIFEST.json
+        months\
+          reflect_billing_2025-11.db
+          ...
+          reflect_billing_2026-10.db
+      runtime\
+
+V20 also accepts this layout:
+
+    data_v18_2\data_v18_full\core\...
+
+START
+-----
+Double-click:
+
+    RUN_V20.bat
+
+The dashboard opens at:
+
+    http://127.0.0.1:8020
+
+NO COPY OPTION
+--------------
+If the large data should stay where it is, run:
+
+    RUN_V20_WITH_DATA_PATH.bat "C:\path\to\data_v18_full"
+
+DEMO ACCOUNTS
+-------------
+Provider:
+    provider1@reflect.demo
+    ProviderDemo2026!
+
+Admin:
+    admin@reflect.demo
+    AdminDemo2026!
+
+Billing Reviewer:
+    billing@reflect.demo
+    BillingDemo2026!
+
+BILLING AMOUNT NOTE
+-------------------
+V20 can display a SYNTHETIC demo amount for presentation purposes.
+Default synthetic rate: $120/provider-hour.
+This is not a payer rate, allowed amount, reimbursement amount, or eligibility determination.
+To change it before launching:
+
+    set REFLECT_DEMO_HOURLY_RATE=150
+    RUN_V20.bat
+
+V20.1 FAST STARTUP: the launcher skips full event-table counts and PRAGMA quick_check. Run DEEP_CHECK_V20_DATA.bat separately for full validation.

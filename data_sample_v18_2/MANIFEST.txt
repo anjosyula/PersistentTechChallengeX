@@ -1,0 +1,9 @@
+Reflect Synthetic Data V13
+Schema version: 13.0
+Patients: 500
+Providers: 20
+Months: 2026-10 through 2026-10 (1)
+Official Mobile modules: 14
+Official XR modules: 17
+Detailed patient-month session events: materialized on demand
+Synthetic data only — not clinical or billing determination data.

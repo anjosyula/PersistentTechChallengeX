@@ -1,0 +1,1 @@
+Place the contents of your V18.2 data_v18_full folder here (core, months, billing_master_v18_2, runtime), or place data_v18_full as a subfolder.

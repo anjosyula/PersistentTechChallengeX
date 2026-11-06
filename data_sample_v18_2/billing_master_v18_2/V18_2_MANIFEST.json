@@ -1,0 +1,12 @@
+{
+  "schema_version": "18.2",
+  "dataset_type": "BILLING_MASTER_EVENT_LEVEL_STABLE",
+  "source_root": "/mnt/data/Reflect_Synthetic_Data_V18_2_Billing_Master_Stable/sample_v18_2/data_v13",
+  "months": [
+    "2026-10"
+  ],
+  "provider_count": 20,
+  "session_detail_mode": "billing",
+  "generated_utc": "2026-11-05T23:01:06.777318+00:00",
+  "billing_rule": "Provider time is patient-specific; patient engagement minutes are never provider time."
+}
